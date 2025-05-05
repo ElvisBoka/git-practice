@@ -1,3 +1,4 @@
+< phase-3
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,4 +62,69 @@
           
           </section>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="phase3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="contact" id="contact">
+        <h2 class="headings3">Contact <span>Me</span></h2>
+           <form action="">
+               <div class="input-group">
+                   <div class="input-box">
+                       <input type="text"
+                           placeholder="Full name">
+                       <input type="email"
+                           placeholder="Email">
+                   </div>
+                   <div class="input-box">
+                       <input type="number"
+                           placeholder="Cell number">
+                       <input type="text"
+                           placeholder="subject">
+                   </div>
+               </div>
+               <div class="input-group-2">
+                   <textarea name="" id="" cols="30"
+                   rows="10" placeholder="Your Message"></textarea>
+                   <input type="submit" value="Send Message"
+                   class="btn">
+       
+               </div>
+           </form>
+
+           <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const form = document.querySelector("form");
+          
+              form.addEventListener("submit", function (e) {
+                e.preventDefault();
+          
+                const fullName = form.querySelector('input[placeholder="Full name"]').value;
+                const email = form.querySelector('input[placeholder="Email"]').value;
+                const cell = form.querySelector('input[placeholder="Cell number"]').value;
+                const subject = form.querySelector('input[placeholder="subject"]').value;
+                const message = form.querySelector('textarea').value;
+          
+                console.log("Full Name:", fullName);
+                console.log("Email:", email);
+                console.log("Cell:", cell);
+                console.log("Subject:", subject);
+                console.log("Message:", message);
+          
+                alert("Message sent successfully!");
+                form.reset();
+              });
+            });
+          </script>
+          
+          </section>
+</body>
+> main
 </html>
