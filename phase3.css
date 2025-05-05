@@ -1,3 +1,4 @@
+< phase-3
 * {
     font-family: "Montserrat", serif;
     box-sizing: border-box;
@@ -62,4 +63,70 @@ html, body {
       color: black;
       background-color:#6a4980;
   
+=======
+* {
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior: smooth;
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(99deg,#05051a, #0e0c0c, #031303);
+  }
+
+.contact .headings3 span{
+    color: #6a4980;
+  }
+  
+  .contact{
+      background-color: black;
+  
+  }
+  .contact h2{
+      margin-bottom: 3rem;
+      color: white;
+  
+  }
+  .contact form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap:3rem;
+      margin:5rem auto;
+      text-align: center;
+  }
+  .contact form .input-box{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .contact form .input-box input,
+  .contact form textarea{
+      width: 100%;
+      padding:2.5rem;
+      font-size:1.8rem;
+      color:#6a4980;
+      background: black;
+      border-radius: 2rem;
+      border: 2px solid #6a4980;
+      margin:1.5rem 0;
+      resize:none;
+  }
+  .contact form .btn{
+      margin-top:2rem;
+      color: black;
+      background-color:#6a4980;
+  
+> main
   }
